@@ -8,6 +8,6 @@ const adress = new Adress("Rua Três", 2, "1234-5678", "Belém-PA");
 customer.Adress = adress;
 customer.activate();
 
-const item1 = new OrderItem("1", "Item 1", 10);
-const item2 = new OrderItem("2", "Item 2", 15);
+const item1 = new OrderItem("1", "Item 1", 10, "i1", 2);
+const item2 = new OrderItem("2", "Item 2", 15, "i2", 4);
 const order = new Order("1", "123", [item1, item2]);
