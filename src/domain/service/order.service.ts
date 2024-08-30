@@ -1,7 +1,8 @@
-import Customer from "../domain/entity/customer";
-import Order from "../domain/entity/order";
-import OrderItem from "../domain/entity/order_item";
+
 import { v4 } from "uuid";
+import Order from "../entity/order";
+import Customer from "../entity/customer";
+import OrderItem from "../entity/order_item";
 export class OrderService {
   static total(orders: Order[]) {
     return orders.reduce((acc, order) => acc + order.total(), 0);
