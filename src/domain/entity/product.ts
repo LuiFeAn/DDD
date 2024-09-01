@@ -1,7 +1,7 @@
 export default class Product {
-  _id: string;
-  _name: string;
-  _price: number;
+  private _id: string;
+  private _name: string;
+  private _price: number;
 
   constructor(id: string, name: string, price: number) {
     this._id = id;
@@ -18,6 +18,10 @@ export default class Product {
   changePrice(price: number): void {
     this._price = price;
     this.validate();
+  }
+
+  get id() {
+    return this._id;
   }
 
   get name() {
