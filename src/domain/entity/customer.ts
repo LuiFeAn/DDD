@@ -33,6 +33,10 @@ export default class Customer {
     this._rewardPoints += points;
   }
 
+  changeAdress(adress: Adress){
+    this._adress = adress;
+  }
+
   get isActive() {
     return this._active;
   }
@@ -55,6 +59,10 @@ export default class Customer {
 
   set Adress(adress: Adress) {
     this._adress = adress;
+  }
+
+  get adress(){
+    return this._adress;
   }
 
   desactivate() {
