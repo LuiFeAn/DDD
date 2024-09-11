@@ -1,6 +1,5 @@
-import Adress from "./adress";
+import Adress from "../value-object/adress";
 import Customer from "./customer";
-
 describe("Customer unit tests", () => {
   it("Should throw error when id is empty", () => {
     expect(() => {

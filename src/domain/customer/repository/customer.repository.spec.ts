@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize-typescript";
 import CustomerRepository from "./customer.repository";
-import Customer from "../../domain/entity/customer";
-import Adress from "../../domain/entity/adress";
-import CustomerModel from "../db/sequelize/model/customer.model";
+import Customer from "../entity/customer";
+import Adress from "../value-object/adress";
+import CustomerModel from "../../../infraestucture/db/sequelize/model/customer.model";
 import { UniqueConstraintError } from "sequelize";
 describe("Customer repository tests", () => {
   let sequileze: Sequelize;
